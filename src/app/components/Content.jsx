@@ -2,10 +2,15 @@ import React from 'react'
 
 const Content = () => {
   return (
-    <div className='flex-col w-full'>
-      <article className='bg-purple-300 h-128 flex-1 p-4 border border-dashed'>
-      </article> 
-      <article className='bg-blue-300 h-128 flex-1 p-4 border border-dashed'/>
+    <div className='flex flex-row lg:bg-opacity-25'>
+      {/* <div className='flex-col'>
+        <div className='bg-purple-300 p-10 border'>1</div>
+        <div className='bg-blue-300  p-10 border '>2</div>
+      </div>
+      <div className='flex-col'>
+        <div className='bg-purple-300 p-10 border'>3</div>
+        <div className='bg-blue-300  p-10 border '>4</div>
+      </div> */}
     </div>
   )
 }

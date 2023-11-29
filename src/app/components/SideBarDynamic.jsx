@@ -14,9 +14,9 @@ const SideBarDynamic = ({ icon, text, children, collapsed }) => {
           (
             <div>
               <span>{icon}</span>
-              <span>{text}</span>
+              <span className="">{text}</span>
               {!collapsed ? (
-                <div className="ml-2 flex-col text-lg lg:text-sm">
+                <div className="ml-2 flex-col text-xs lg:text-lg">
                   {children.map((child, index) => (
                     <SideBarItem
                       onClick={() => handleItemClick(index)}
