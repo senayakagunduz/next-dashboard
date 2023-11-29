@@ -30,6 +30,9 @@ module.exports = {
       },
       spacing:{
         128 : '32rem'
+      },
+      text:{
+        default:'text-current'
       }
     },
   },

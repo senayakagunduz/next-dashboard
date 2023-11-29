@@ -2,11 +2,11 @@ import React from 'react'
 
 const Content = () => {
   return (
-    <main className='flex gap-2'>
-       <section className='h-128 group'>
-        
-       </section>
-    </main>
+    <div className='flex-col w-full'>
+      <article className='bg-purple-300 h-128 flex-1 p-4 border border-dashed'>
+      </article> 
+      <article className='bg-blue-300 h-128 flex-1 p-4 border border-dashed'/>
+    </div>
   )
 }
 
