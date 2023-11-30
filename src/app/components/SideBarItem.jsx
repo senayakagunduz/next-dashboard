@@ -8,17 +8,17 @@ const SideBarItem = ({ icon, text, children, index, collapsed }) => {
     setIsOpen(!isOpen);
   };
 
-
   return (
-    <div key={index} className={`flex-col items-center gap-2 cursor-pointer`}>
+    <div className="flex-col items-center gap-2 cursor-pointer">
       <div className="flex align-center justify-start mb-3 text-textGrey hover:bg-purpleDark rounded hover-scale-110" >
-
         <div onClick={toggleDropdown} className="flex py-3 pl-3 px-4 items-center justify-between gap-7 w-30">
           <div className="flex items-center">
             <span className="text-xl mr-3">{icon}</span>
             <span>{text}</span>
           </div>
+          
           <div className="flex items-center">
+            {/*sidebar kapalıysa ve çocuğu varsa yukarı aşağı oku koy*/}
             {!collapsed && children && children.length > 0 && (
               isOpen ? (
                 < MdKeyboardArrowUp className="text-xl" />
@@ -30,7 +30,8 @@ const SideBarItem = ({ icon, text, children, index, collapsed }) => {
         </div>
 
       </div>
-
+      
+      {/*sidebar kapalıysa ve çocuğu varsa SidebarItem ı tekrar dön*/}
       {isOpen && children && children.length > 0 && (
 
         <div className="ml-2">

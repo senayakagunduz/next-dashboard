@@ -1,16 +1,15 @@
-import { RiCustomerService2Line, RiDashboardLine, RiMailCheckLine } from "react-icons/ri";
-import { TbDeviceAnalytics, TbLayoutKanban, TbRuler2Off } from "react-icons/tb";
-import { BsClipboardData, BsTable } from "react-icons/bs";
+import { RiDashboardLine } from "react-icons/ri";
+import { TbDeviceAnalytics, TbLayoutKanban} from "react-icons/tb";
+import { BsClipboardData} from "react-icons/bs";
 import { FiUserCheck } from "react-icons/fi";
 import { GiChart } from "react-icons/gi";
-import { MdOutlineSupervisorAccount, MdOutlineWifiTethering } from "react-icons/md";
+import { MdOutlineWifiTethering } from "react-icons/md";
 import { CiChat1, CiMail } from "react-icons/ci";
 import { IoCalendarNumberOutline } from "react-icons/io5";
 
 const data = [
   {
     text: 'Dashboard',
-    submenu: true,
     children: [
       { icon: <RiDashboardLine />, text: 'Default', active: true },
       { icon: <TbDeviceAnalytics />, text: 'Analytics' },
@@ -18,7 +17,6 @@ const data = [
   },
   {
     text: 'Widget',
-    submenu: true,
     children: [
       { icon: <MdOutlineWifiTethering />, text: 'Statistics' },
       { icon: <BsClipboardData />, text: 'Data' },
@@ -27,7 +25,6 @@ const data = [
   },
   {
     text: 'Application',
-    submenu: true,
     children: [
       {
         icon: <FiUserCheck />,
@@ -74,7 +71,6 @@ const data = [
   },
   {
     text: 'Forms',
-    submenu: true,
     children: [
       {
         icon: <FiUserCheck />,

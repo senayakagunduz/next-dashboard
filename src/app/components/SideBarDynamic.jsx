@@ -16,8 +16,7 @@ const SideBarDynamic = ({ icon, text, children, collapsed }) => {
             <div>
               <span>{icon}</span>
               <span className="">{text}</span>
-               {/*link varsa ve linklerin alt linkleri varsa ve sidebar açıksa alttaki componenti de döndür*/}
-              {!collapsed ? (
+               {/*link varsa, linklerin alt linkleri varsa ve sidebar açıksa alttaki sidebarItem componentini döndür*/}
                 <div className="ml-2 flex-col text-xs lg:text-md pr-10">
                   {children.map((child, index) => (
                     <SideBarItem
@@ -29,12 +28,11 @@ const SideBarDynamic = ({ icon, text, children, collapsed }) => {
                       collapsed={collapsed}
                     />
                   ))}
-                </div>
-              ) : null}
+                </div> 
             </div>
           ) : (
             <>
-            {/*sadece iconları getirir*/}
+            {/*altlink yoksa,kapalısa sidebar sadece iconları getirir*/}
               {children && (
                 <div className="ml-2">
                   {children.map((child, index) => (
