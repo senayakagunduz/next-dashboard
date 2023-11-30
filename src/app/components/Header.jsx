@@ -9,10 +9,10 @@ import { CiBellOn } from "react-icons/ci";
 import { MdOutlineZoomOutMap } from "react-icons/md";
 
 const icons = [
-    { id: 'wifi', icon: <FaWifi /> },
-    { id: 'airchina', icon: <SiAirchina /> },
-    { id: 'bell', icon: <CiBellOn /> },
-    { id: 'zoom', icon: <MdOutlineZoomOutMap /> }
+    { id: 1, icon: <FaWifi /> },
+    { id: 2, icon: <SiAirchina /> },
+    { id: 3, icon: <CiBellOn /> },
+    { id: 4, icon: <MdOutlineZoomOutMap /> }
   ];
 
 const Header = ({ toggleSidebar }) => {
