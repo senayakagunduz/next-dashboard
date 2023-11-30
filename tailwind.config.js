@@ -26,7 +26,7 @@ module.exports = {
         'purpleHover': '#5E35B1',
         'lightBlue': '#E3F2FD',
         'darkBlue': '#1E88E5',
-        'textGrey':'#text-gray-600'
+        'textGrey':'rgb(75 85 99 / var(--tw-text-opacity))'
       },
       spacing:{
         128 : '32rem'

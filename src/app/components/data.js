@@ -36,20 +36,20 @@ const data = [
           {
             text: 'AccountProfile',
             children: [
-              { text: 'Profile01' },
-              { text: 'Profile02' },
-              { text: 'Profile03' }
+              { text: '. Profile01' },
+              { text: '. Profile02' },
+              { text: '. Profile03' }
             ]
           },
           {
             text: 'Customer',
             children: [
-              { text: 'Customer List' },
-              { text: 'Order List' },
-              { text: 'Create Invoice' },
-              { text: 'Order Details' },
-              { text: 'Product' },
-              { text: 'Product Review' }
+              { text: '. Customer List' },
+              { text: '. Order List' },
+              { text: '. Create Invoice' },
+              { text: '. Order Details' },
+              { text: '. Product' },
+              { text: '. Product Review' }
             ]
           },
         ]
@@ -62,10 +62,10 @@ const data = [
         icon: <FiUserCheck />,
         text: 'E-commerce',
         children: [
-          { text: 'Products' },
-          { text: 'Products Detail' },
-          { text: 'Product List' },
-          { text: 'Checkout' },
+          { text: '. Products' },
+          { text: '. Products Detail' },
+          { text: '. Product List' },
+          { text: '. Checkout' },
         ]
 
       },
@@ -80,14 +80,14 @@ const data = [
         icon: <FiUserCheck />,
         text: 'Components',
         children: [
-              { text: 'Autocomplete' },
-              { text: 'Button' },
-              { text: 'Checkbox' },
-              { text: 'Datte & Time' },
-              { text: 'Radio' },
-              { text: 'Slider' }, 
-              { text: 'Switch' },
-              { text: 'Text Field'}
+              { text: '. Autocomplete' },
+              { text: '. Button' },
+              { text: '. Checkbox' },
+              { text: '. Datte & Time' },
+              { text: '. Radio' },
+              { text: '. Slider' }, 
+              { text: '. Switch' },
+              { text: '. Text Field'}
         ]
       },
       { icon: <CiChat1 />, text: 'Plugins' },
@@ -97,10 +97,10 @@ const data = [
         icon: <FiUserCheck />,
         text: 'Data Grid',
         children: [
-          { text: 'Basic' },
-          { text: 'Inline Editing' },
-          { text: 'Column Groups' },
-          { text: 'Save & Restore' },
+          { text: '. Basic' },
+          { text: '. Inline Editing' },
+          { text: '. Column Groups' },
+          { text: '. Save & Restore' },
         ]
 
       },
