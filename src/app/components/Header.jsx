@@ -9,8 +9,11 @@ import { CiBellOn } from "react-icons/ci";
 import { MdOutlineZoomOutMap } from "react-icons/md";
 
 const icons = [
-    <FaWifi />, <SiAirchina />, <CiBellOn />, <MdOutlineZoomOutMap />
-]
+    { id: 'wifi', icon: <FaWifi /> },
+    { id: 'airchina', icon: <SiAirchina /> },
+    { id: 'bell', icon: <CiBellOn /> },
+    { id: 'zoom', icon: <MdOutlineZoomOutMap /> }
+  ];
 
 const Header = ({ toggleSidebar }) => {
 
@@ -44,9 +47,9 @@ const Header = ({ toggleSidebar }) => {
             <nav className="hidden md:flex justify-between items-center space-x-4 lg:space-x-8">
                 <ul className="flex items-center sm:none lg:text-lg space-x-4 lg:space-x-8">
                     {
-                        icons.map((icon, index) => (
-                            <li key={index} className={`${index % 2 == 0 ? "text-purple-600 bg-purple-200 hover:bg-purple-300 p-2 rounded hover:text-white" : "text-blue-600 bg-blue-200 hover:bg-blue-300 p-2 rounded hover:text-white"}`}>
-                                <a href="#" className='font-bold text-xl'>{icon}</a>
+                        icons.map((item) => (
+                            <li key={item.id} className={`${item.id % 2 == 0 ? "text-purple-600 bg-purple-200 hover:bg-purple-300 p-2 rounded hover:text-white" : "text-blue-600 bg-blue-200 hover:bg-blue-300 p-2 rounded hover:text-white"}`}>
+                                <a href="#" className='font-bold text-xl'>{item.icon}</a>
                             </li>
                         ))
                     }
