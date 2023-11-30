@@ -15,17 +15,17 @@ const icons = [
 const Header = ({ toggleSidebar }) => {
 
     return (
-        <header className=' flex justify-between items-center bg-white py-2 lg:py-1 px-7 lg:px-3 text-gray-600'>
+        <header className=' flex justify-between items-center bg-white py-2 lg:py-1 px-7 lg:px-3 text-textGrey'>
             <div className=' flex justify-between items-center space-x-8 lg:space-x-16'>
                 <div className='flex items-center'>
                     <div className=' hidden lg:block px-0 lg:pr-10'>
-                        <a href="#" className=' hidden lg:block text-3xl font-bold text-purple-800 py-4 '>
+                        <a href="#" className=' hidden lg:block text-3xl font-bold text-purpleLight py-4 '>
                             Berry
                         </a>
                     </div>
                 </div>
                 <div className='flex items-center'>
-                    <button onClick={toggleSidebar} className='p-2 rounded bg-purple-200 text-purple-800 hover:bg-purpleHover hover:text-lightBlue'>
+                    <button onClick={toggleSidebar} className='p-2 rounded bg-purpleLight text-purpleDark hover:bg-purpleDark'>
                         <RxHamburgerMenu />
                     </button>
                 </div>

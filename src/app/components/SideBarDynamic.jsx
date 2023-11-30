@@ -36,10 +36,10 @@ const SideBarDynamic = ({ icon, text, children, collapsed }) => {
                 <div className="ml-2">
                   {children.map((child, index) => (
                     <div key={index}
-                      className={`flex-column items-center gap-3 hover:bg-purpleBackground ${selectedItem === index ? 'bg-purple-200' : ''} py-2 px-1.5 rounded-md mt-2`}
+                      className={`flex-column items-center gap-3 hover:bg-purple-100 ${selectedItem === index ? 'bg-purpleLight' : ''} py-2 px-1.5 rounded-md mt-2`}
                       onClick={() => handleItemClick(index)}>
-                      <a href="#" key={index} className={`text-gray-600 text-sm flex items-center justify-center gap-x-4 transition-colors cursor-pointer p-2 ps-0 `}>
-                        <span className={` text-gray-600 text-2xl block float-left`}>{child.icon}</span>
+                      <a href="#" key={index} className={`text-textGrey text-sm flex items-center justify-center gap-x-4 transition-colors cursor-pointer p-2 ps-0 `}>
+                        <span className={` text-textGrey text-2xl block float-left`}>{child.icon}</span>
                       </a>
                     </div>
                   ))}
