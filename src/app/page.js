@@ -4,7 +4,6 @@ import Header from "./components/Header";
 import { useState } from "react";
 import Content from "./components/Content";
 
-
 export default function Home() {
   const [collapsed, setCollapsed] = useState(false); //açık
 

@@ -28,7 +28,6 @@ const SideBarItem = ({ icon, text, children, index, collapsed }) => {
             )}
           </div>
         </div>
-
       </div>
       
       {/*sidebar kapalıysa ve çocuğu varsa SidebarItem ı tekrar dön*/}

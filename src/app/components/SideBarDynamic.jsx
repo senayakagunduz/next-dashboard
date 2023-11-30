@@ -32,7 +32,7 @@ const SideBarDynamic = ({ icon, text, children, collapsed }) => {
             </div>
           ) : (
             <>
-            {/*altlink yoksa,kapalısa sidebar sadece iconları getirir*/}
+            {/*alt link yoksa,kapalısa sidebar sadece iconları getirir*/}
               {children && (
                 <div className="ml-2">
                   {children.map((child, index) => (

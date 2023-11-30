@@ -1,8 +1,6 @@
 "use client";
 import React from 'react'
-import { BsSearch } from 'react-icons/bs';
 import { RxHamburgerMenu } from 'react-icons/rx'
-import { IoFolderOutline } from "react-icons/io5";
 import { FaWifi } from "react-icons/fa6";
 import { SiAirchina } from "react-icons/si";
 import { CiBellOn } from "react-icons/ci";
