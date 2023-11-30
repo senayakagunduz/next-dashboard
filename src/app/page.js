@@ -7,18 +7,20 @@ import Content from "./components/Content";
 
 export default function Home() {
   const [collapsed, setCollapsed] = useState(false); //açık
+  const [isVisible, setIsVisible] = useState(true);
 
   const toggleSidebar = () => {
-    setCollapsed(!collapsed)
+    setIsVisible(!isVisible)
   }
- 
+
   return (
-   <div className={`inset-0 bg-black bg-opacity-50 transition-opacity ease-in-out duration-300 z-[50] ${toggleSidebar} ? 'opacity-100 pointer-events-none' : 'opacity-0 pointer-events-none' `}>
+    <div className={``}>
       <Header toggleSidebar={toggleSidebar} collapsed={collapsed} />
       <main className="flex items-start">
-        <SideBar className={`py-8 text-lg h-screen relative top-0 bottom-0`} toggleSidebar={toggleSidebar} collapsed={collapsed} setCollapsed={setCollapsed}/>
+        <SideBar className={`py-8 text-lg h-screen relative top-0 bottom-0`} isVisible={isVisible} setIsVisible={setIsVisible} toggleSidebar={toggleSidebar} collapsed={collapsed} setCollapsed={setCollapsed} />
         <Content />
-      </main>   
+      </main>
     </div>
   )
 }
+// <div className={`inset-0 bg-black bg-opacity-50 transition-opacity ease-in-out duration-300 z-[50] ${toggleSidebar} ? 'opacity-100 pointer-events-none' : 'opacity-0 pointer-events-none' `}>
