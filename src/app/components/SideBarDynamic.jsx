@@ -10,13 +10,15 @@ const SideBarDynamic = ({ icon, text, children, collapsed }) => {
     }
     return (
       <div>
+        {/*link varsa ve linklerin alt linkleri varsa iconları ve text döndür*/}
         {children && children.length > 0 && !collapsed ?
           (
             <div>
               <span>{icon}</span>
               <span className="">{text}</span>
+               {/*link varsa ve linklerin alt linkleri varsa ve sidebar açıksa alttaki componenti de döndür*/}
               {!collapsed ? (
-                <div className="ml-2 flex-col text-sm lg:text-md pr-10">
+                <div className="ml-2 flex-col text-xs lg:text-md pr-10">
                   {children.map((child, index) => (
                     <SideBarItem
                       onClick={() => handleItemClick(index)}
@@ -32,6 +34,7 @@ const SideBarDynamic = ({ icon, text, children, collapsed }) => {
             </div>
           ) : (
             <>
+            {/*sadece iconları getirir*/}
               {children && (
                 <div className="ml-2">
                   {children.map((child, index) => (
