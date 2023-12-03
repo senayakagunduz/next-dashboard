@@ -1,11 +1,12 @@
 "use client";
-import SideBar from "./components/SideBar";
-import Header from "./components/Header";
 import { useState } from "react";
-import Content from "./components/Content";
+import Header from "@/components/Header";
+import SideBar from "@/components/SideBar";
 
-export default function Home() {
+
+export default function Layout(props) {
   const [collapsed, setCollapsed] = useState(false); //açık
+  const [isActive, setIsActive] = useState(false);
 
   const toggleSidebar = () => {
     setCollapsed(!collapsed)
@@ -15,8 +16,8 @@ export default function Home() {
     <div>
       <Header toggleSidebar={toggleSidebar} collapsed={collapsed} />
       <main className="flex items-start">
-        <SideBar  toggleSidebar={toggleSidebar} collapsed={collapsed} setCollapsed={setCollapsed} />
-        <Content />
+        <SideBar  toggleSidebar={toggleSidebar} collapsed={collapsed} setCollapsed={setCollapsed} isActive={isActive}/>
+        {props.children}
       </main>
     </div>
   )
