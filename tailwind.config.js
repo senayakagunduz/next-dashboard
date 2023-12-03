@@ -27,7 +27,7 @@ module.exports = {
         'lightBlue': '#E3F2FD',
         'darkBlue': '#1E88E5',
         'textGrey':'rgb(75 85 99 / var(--tw-text-opacity))',
-        'textPurple':'text-purple-600'
+        'textPurple':'text-purple-600',
       },
       spacing:{
         128 : '32rem'
