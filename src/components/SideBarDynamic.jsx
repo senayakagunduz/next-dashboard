@@ -66,7 +66,7 @@ const SideBarDynamic = ({ icon, text, children, collapsed, url, submenu }) => {
               <div key={index}
                 className={`flex-column items-center gap-3 py-2 px-1.5 rounded-md mt-2`}
                 onClick={() => handleItemClick(index,child.url)}>
-                <Link href={child.url} key={index} className={`text-purple-600 text-sm flex items-center justify-center gap-x-4 transition-colors cursor-pointer p-2 ps-0 ${pathname === child.url && index === selectedItem ? 'bg-purple-200 rounded' : ''}`} >
+                <Link href={child.url} key={index} className={`text-purple-600 text-sm flex items-center justify-center gap-x-4 transition-colors hover:bg-purple-200 rounded cursor-pointer p-2 ps-0 ${pathname === child.url && index === selectedItem ? 'bg-purple-200 rounded' : ''}`} >
                   <span className={` text-textGrey text-2xl block float-left pl-2`}>{child.icon}</span>
                 </Link>
               </div>
