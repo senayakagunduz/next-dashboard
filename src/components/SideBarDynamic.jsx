@@ -53,8 +53,10 @@ const SideBarDynamic = ({ icon, text, children, collapsed }) => {
                     collapsed={collapsed}
                   />
                 </Link>
+
               ))}
             </div>
+            <hr className="border-gray-200 my-2 px-2 w-full" /> 
           </div>
         
       ) : (
