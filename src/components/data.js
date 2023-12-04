@@ -37,6 +37,7 @@ const data = [
 
             text: 'AccountProfile',
             url: "/account",
+            leaf:true,
             submenu: true,
             children: [
               { text: ' Profile01', url: '/profile1', leaf:true },
@@ -47,6 +48,7 @@ const data = [
           {
             text: 'Customer',
             url: "/customer",
+            leaf:true,
             submenu: true,
             children: [
               { text: ' Customer List', url: '/customerlist', url: '/customerlist' ,leaf:true},
