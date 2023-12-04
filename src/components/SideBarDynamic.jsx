@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 import { useRouter } from "next/navigation";
 const { useState, useEffect } = require("react");
 
-const SideBarDynamic = ({ icon, text, children, collapsed, url, submenu }) => {
+const SideBarDynamic = ({ icon, text, children, collapsed }) => {
   const [selectedItem, setSelectedItem] = useState(null);
   const [subMenuOpen, setSubMenuOpen] = useState(true);
 

@@ -1,17 +1,17 @@
 import { useState } from "react";
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 
-const SideBarItem = ({ icon, text, children, index, collapsed }) => {
+const SideBarItem = ({ icon, text, children, collapsed,leaf }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
-
+  
   return (
-    <div className="flex-col items-center gap-2 cursor-pointer">
+    <li className={`flex-col items-center gap-2 cursor-pointer ${leaf ? 'ml-7 list-disc' : ''}`}>
       <div className="flex align-center justify-between gap-7 w-30 mb-3 text-textGrey hover:bg-purple-100  rounded hover-scale-710" >
-        <div onClick={toggleDropdown} className="flex py-3 pl-3 px-4 items-center justify-between gap-7 w-30">
+        <div onClick={toggleDropdown} className="flex py-3 pl-1 px-4 items-center justify-between gap-7 w-30">
           <div className="flex items-center">
             <span className="text-xl mr-3">{icon}</span>
             <span>{text}</span>
@@ -39,7 +39,7 @@ const SideBarItem = ({ icon, text, children, index, collapsed }) => {
           ))}
         </div>
       )}
-    </div>
+    </li>
   );
 };
 export default SideBarItem

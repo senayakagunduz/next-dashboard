@@ -39,9 +39,9 @@ const data = [
             url: "/account",
             submenu: true,
             children: [
-              { text: ' Profile01', url: '/profile1' },
-              { text: ' Profile02', url: '/profile2' },
-              { text: ' Profile03', url: '/profile3' }
+              { text: ' Profile01', url: '/profile1', leaf:true },
+              { text: ' Profile02', url: '/profile2',leaf:true },
+              { text: ' Profile03', url: '/profile3',leaf:true }
             ]
           },
           {
@@ -49,10 +49,10 @@ const data = [
             url: "/customer",
             submenu: true,
             children: [
-              { text: ' Customer List', url: '/customerlist', url: '/customerlist' },
-              { text: ' Order List', url: '/orderlist', url: '/orderlist' },
-              { text: ' Create Invoice', url: '/invoice', url: '/invoice' },
-              { text: ' Product', url: '/product', url: '/product' },
+              { text: ' Customer List', url: '/customerlist', url: '/customerlist' ,leaf:true},
+              { text: ' Order List', url: '/orderlist', url: '/orderlist',leaf:true },
+              { text: ' Create Invoice', url: '/invoice', url: '/invoice',leaf:true },
+              { text: ' Product', url: '/product', url: '/product',leaf:true },
             ]
           },
         ]
@@ -66,10 +66,10 @@ const data = [
         url: "/ecommerce",
         submenu: true,
         children: [
-          { text: ' Products', url: '/products', url: '/products' },
-          { text: ' Products Detail', url: '/productdetail', url: '/productdetail' },
-          { text: ' Product List', url: '/productlist', url: '/productlist' },
-          { text: ' Checkout', url: '/checkout', url: '/checkout' },
+          { text: ' Products', url: '/products', url: '/products' ,leaf:true},
+          { text: ' Products Detail', url: '/productdetail', url: '/productdetail' ,leaf:true},
+          { text: ' Product List', url: '/productlist', url: '/productlist',leaf:true },
+          { text: ' Checkout', url: '/checkout', url: '/checkout',leaf:true },
         ]
 
       },
@@ -84,14 +84,14 @@ const data = [
         text: 'Components',
         url: "/components",
         children: [
-          { text: 'Autocomplete', url: '/autocomplete' },
-          { text: 'Button', url: '/button' },
-          { text: 'Checkbox', url: '/checkbox' },
-          { text: 'Date & Time', url: '/datetime' },
-          { text: 'Radio', url: '/radio' },
-          { text: 'Slider', url: '/slider' },
-          { text: 'Switch', url: '/switch' },
-          { text: 'Text Field', url: '/text' },
+          { text: 'Autocomplete', url: '/autocomplete',leaf:true },
+          { text: 'Button', url: '/button',leaf:true },
+          { text: 'Checkbox', url: '/checkbox',leaf:true },
+          { text: 'Date & Time', url: '/datetime',leaf:true },
+          { text: 'Radio', url: '/radio',leaf:true },
+          { text: 'Slider', url: '/slider' ,leaf:true},
+          { text: 'Switch', url: '/switch',leaf:true },
+          { text: 'Text Field', url: '/text',leaf:true },
         ]
       }
     ]
