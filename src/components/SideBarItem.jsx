@@ -10,7 +10,10 @@ const SideBarItem = ({ icon, text, children, collapsed,leaf }) => {
   
   return (
     <li className={`flex-col items-center justify-center gap-2 cursor-pointer px-2 h-full w-full  hover-scale-110  hover:rounded-lg transition duration-150 ease-in-out hover:bg-purple-100 
-     ${leaf ? 'pl-0 ml-1 list-disc hover:gap-0 hover:px-0 ' : ''}`}>
+     ${leaf ? 'pl-0 ml-1 list-disc hover:gap-0 hover:px-0 ' : ''}
+     `}
+     >
+    
       <div className="flex align-center justify-between gap-7 w-30 mb-3" >
         <div onClick={toggleDropdown} className="flex py-3 pl-3 px-4 items-center justify-between gap-5 w-30">
           <div className="flex items-center ">

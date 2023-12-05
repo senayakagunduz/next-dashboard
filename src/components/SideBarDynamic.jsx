@@ -41,11 +41,13 @@ const SideBarDynamic = ({ icon, text, children, collapsed }) => {
             <div className="ml-0 flex-col justify-center align-center text-xs lg:text-md">
               {children.map((child, index) => (
                 <Link
+                data-te-ripple-init
+                data-te-ripple-color="primary"
                   href={child.url ? child.url : ""}
                   key={index}
                   onClick={() => handleItemClick(index,child.url)}
                   
-                  className={`${pathname === child.url && index === selectedItem ? 'bg-purple-100 rounded-lg text-purple-800 font-bold' : ''}  text-sm flex justify-center items-center cursor-pointer pl-0} `}
+                  className={`${pathname === child.url && index === selectedItem ? 'bg-purple-100 rounded-lg text-purple-800 font-bold transition duration-150 ease-in-out hover:bg-purple-300  focus:shadow-lg focus:outline-none focus:ring-0 active:bg-purple-400' : ''}  text-sm flex justify-center items-center cursor-pointer pl-0} `}
                 >
                   <SideBarItem
                     key={index}
