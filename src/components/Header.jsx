@@ -26,7 +26,7 @@ const Header = ({ toggleSidebar }) => {
                     </div>
                 </div>
                 <div className='flex items-center'>
-                    <button onClick={toggleSidebar} className='p-2 rounded bg-purple-600 text-purple-200 hover:bg-purpleLight hover:text-hoverDark'>
+                    <button onClick={toggleSidebar} className='p-2  bg-purple-200 text-purple-800 rounded-lg hover:bg-purpleLight hover:text-purple-100'>
                         <RxHamburgerMenu />
                     </button>
                 </div>

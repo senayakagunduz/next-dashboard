@@ -38,13 +38,14 @@ const SideBarDynamic = ({ icon, text, children, collapsed }) => {
           <div>
             <span>{icon}</span>
             <span className="">{text}</span>
-            <div className="ml-2 flex-col text-xs lg:text-md pr-10">
+            <div className="ml-0 flex-col justify-center align-center text-xs lg:text-md">
               {children.map((child, index) => (
                 <Link
                   href={child.url ? child.url : ""}
                   key={index}
                   onClick={() => handleItemClick(index,child.url)}
-                  className={`${pathname === child.url && index === selectedItem ? 'bg-purple-100 rounded text-purple-600 ' : ''}   text-sm flex items-center cursor-pointer  ps-0  `}
+                  
+                  className={`${pathname === child.url && index === selectedItem ? 'bg-purple-100 rounded-lg text-purple-800 font-bold' : ''}  text-sm flex justify-center items-center cursor-pointer pl-0} `}
                 >
                   <SideBarItem
                     key={index}
@@ -66,9 +67,12 @@ const SideBarDynamic = ({ icon, text, children, collapsed }) => {
           <div className="ml-2">
             {children.map((child, index) => (
               <div key={index}
-                className={`flex-column items-center gap-3 py-2 px-1.5 rounded-md mt-2`}
+                className={`flex-column items-center gap-3 py-2 px-2 rounded-md mt-2 `}
                 onClick={() => handleItemClick(index,child.url)}>
-                <Link href={child.url} key={index} className={`text-sm flex items-center justify-center gap-x-4 transition-colors hover:bg-purple-200 rounded cursor-pointer p-2 ps-0 ${pathname === child.url && index === selectedItem ? 'bg-purple-200 rounded' : ''}`} >
+                <Link href={child.url} key={index} 
+                className={`text-sm flex items-center justify-center gap-x-4  hover:bg-purple-200
+                 rounded cursor-pointer p-2 ps-0 
+                ${pathname === child.url && index === selectedItem ? 'bg-purple-200 rounded' : ''}`} >
                   <span className={` text-textGrey text-2xl block float-left pl-2`}>{child.icon}</span>
                 </Link>
               </div>
